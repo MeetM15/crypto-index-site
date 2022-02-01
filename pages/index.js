@@ -566,12 +566,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-full text-inputText text-center text-xs font-medium">
-                Our pre-sale tokens are priced on the dollar value, and
+                Our pre-sale tokens are priced at the dollar value, and
                 additional coins will only be released per $1 added into the
                 fund or via exchanges between holders who want to liquidate and
-                new people who want to buy in. Once we hit our fund goal, there
-                will be a waitlist to either mint additional or provide
-                liquidation for other holders.
+                new people purchases. Once we hit our fund goal, there
+                will be a waitlist to either release more tokens at the current token price based on the Net Asset Value (NAV) or in order to provide
+                liquidation for original holders.
               </div>
             </div>
           </div> <
@@ -583,12 +583,12 @@ export default function Home() {
                 SAFE ERC20-COMPLIANT SMART CONTRACT
               </div>
               <div className="font-bold text-4xl xl:text-5xl mb-5 leading-10 xl:leading-12 text-center xl:text-left">
-                CRYPTO20 makes it easy for anyone to get exposure to crypto
+                Index Block makes it easy for anyone to get exposure to crypto
                 returns with broad, diversified risk.
               </div>
               <div className="flex w-full items-start justify-center xl:justify-start mb-4 lg:mb-12">
                 <a
-                  href="https://cdn.crypto20.com/pdf/c20-whitepaper.pdf?_ga=2.40936999.468436110.1643208337-50399524.1643208337"
+                  href="https://cdn.indexblock.com/pdf/indb-whitepaper.pdf"
                   target="_blank"
                   rel="noopener noreferrer">
                   <button
@@ -602,14 +602,14 @@ export default function Home() {
                   </button>
                 </a>
                 <a
-                  href="https://github.com/cryptotwenty"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer">
                   <button
                     className="bg-btnBlue text-white text-xs font-medium px-4 py-2 w-36 lg:w-46 flex rounded-lg items-center justify-center mb-4 sm:mb-0 sm:mr-4 h-12"
                     type="button">
                     <IoLogoGithub className="text-white mr-1" size="24px" />
-                    View our github
+                    Coming Soon
                   </button>
                 </a>
               </div>
@@ -674,8 +674,8 @@ export default function Home() {
                 }}
               />
             </div> <
-        /div> <
-        /div> <
+        /div> < /
+        div > <
         div className = "w-full flex flex-col justify-center bg-bggray  px-4 xl:px-24 py-16 xl:py-24" >
         <div className="w-full flex flex-col xl:flex-row gap-12">
             <div className="w-full xl:w-4/6 flex flex-wrap w-full gap-4 bg-secondary rounded-xl p-8 justify-center">
@@ -700,11 +700,10 @@ export default function Home() {
             </div>
             <div className="w-full xl:w-2/6 flex flex-col gap-4 h-full items-center justify-center">
               <div className="font-bold text-4xl xl:text-5xl mb-5 leading-10 xl:leading-12 text-center xl:text-left">
-                Current Fund Portfolio
+                Fund Holdings
               </div>
               <div className="font-medium text-sm text-lgrey text-center xl:text-left mb-3">
-                We used extensive backtesting and data science to create a fund
-                that rebalances on a weekly basis and caps each asset at 10%.
+                Our formula takes into account numerous variables and factors backed by data to assess tokens to be bought and rebalanced.
               </div>
               <div className="flex flex-col gap-4 w-full items-center xl:items-start justify-between sm:justify-start mb-4 lg:mb-12">
                 <a href="#" target="_blank" rel="noopener noreferrer">
@@ -712,11 +711,11 @@ export default function Home() {
                     className="bg-secondary text-btnBlue text-xs font-medium px-4 py-2 flex rounded-lg items-center justify-center mb-4 sm:mb-0 sm:mr-4 h-12"
                     type="button">
                     <IoLogoGithub className="text-btnBlue mr-2" size="24px" />
-                    Fact Sheet
+                    Fact Sheet Coming Soon
                   </button>
                 </a>
                 <a
-                  href="https://cdn.crypto20.com/pdf/c20-whitepaper.pdf?_ga=2.40936999.468436110.1643208337-50399524.1643208337"
+                  href="https://cdn.indexblock.com/pdf/indb-whitepaper.pdf"
                   target="_blank"
                   rel="noopener noreferrer">
                   <button
@@ -737,7 +736,7 @@ export default function Home() {
                       className="text-btnBlue mr-2"
                       size="24px"
                     />
-                    Report coming soon
+                    Report Coming Soon
                   </button>
                 </a>
               </div>
@@ -746,13 +745,10 @@ export default function Home() {
         div className = "flex flex-wrap w-full xl:gap-4 xl:mt-16 justify-center" >
         <div className="flex flex-col items-start justify-start w-80 h-64 p-5">
               <div className="w-full font-bold text-xl mb-4">
-                Index Fund Performance
+                Performance
               </div>
               <div className="w-full flex items-center justify-center text-sm font-medium text-inputText">
-                CRYPT020 provides a way to track the performance of the crypto
-                markets as a whole by holding a single crypto asset. Index funds
-                have consistently beaten the average managed fund since their
-                inception.
+                The INDB token provided by Index Block allows for shareholders to track their performance via a single crypto asset. Index funds consistently beat the average managed fund since their inception.
               </div>
             </div> <
         div className = "flex flex-col items-start justify-start w-80 h-64 p-5" >
@@ -760,9 +756,12 @@ export default function Home() {
                 Ease and Simplicity
               </div> <
         div className = "w-full flex items-center justify-center text-sm font-medium text-inputText" >
-        CRYPT020 provides a way to track the performance of the crypto markets as a whole by holding a single crypto asset.Index funds have consistently beaten the average managed fund since their inception. <
-        /div> <
-        /div> <
+        There are thousands of cryptocurrencies
+        for investors to choose from leading to choice paralysis.Choice adds cost, complexity and the need
+        for advice.Index Block eliminates this complexity
+        for the new crypto investor. <
+        /div> < /
+        div > <
         div className = "flex flex-col items-start justify-start w-80 h-64 p-5" >
         <div className="w-full font-bold text-xl mb-4">REFER Program</div> <
         div className = "w-full flex items-center justify-center text-sm font-medium text-inputText mb-4" >
@@ -780,12 +779,12 @@ export default function Home() {
                 </button> <
         div className = "font-medium text-xs text-textBlue underline" >
         Connect your wallet to get a referral code <
-        /div> <
-        /div> <
-        /div> <
-        /div> <
-        div className = "font-medium text-xs text-lgrey w-full flex flex-wrap sm:flex-nowrap items-center justify-center xl:justify-end mt-4 gap-2" > < /div> <
-        /div> <
+        /div> < /
+        div > <
+        /div> < /
+        div > <
+        div className = "font-medium text-xs text-lgrey w-full flex flex-wrap sm:flex-nowrap items-center justify-center xl:justify-end mt-4 gap-2" > < /div> < /
+        div > <
         a id = "faq" >
         <div className="w-full flex flex-col xl:flex-row justify-center bg-secondary  px-4 xl:px-24 py-16 xl:py-24">
             <Faq />
@@ -793,92 +792,56 @@ export default function Home() {
         /a> <
         div className = "w-full flex flex-col justify-center bg-bggray px-4 xl:px-32 py-16 xl:py-24" >
         <div className="font-medium text-3xl xl:text-4xl mb-5 leading-10 xl:leading-12 text-center xl:px-32 ">
-            Join our amazing community of over 50,000 inverstor abd crypto
-            enthusiasts!
+            Join our amazing community by joining below!
           </div> <
         div className = "flex flex-wrap w-full items-center justify-center" >
-        <img
-              className="h-24 w-auto p-1"
-              src="/social/twitter.svg"
-              alt="logo"
-            /> <
-        img className = "h-24 w-auto p-1"
-        src = "/social/medium.svg"
-        alt = "logo" /
-        >
-        <img
-              className="h-24 w-auto p-1"
-              src="/social/facebook.svg"
-              alt="logo"
-            /> <
-        img className = "h-24 w-auto p-1"
-        src = "/social/reddit.svg"
-        alt = "logo" /
-        >
-        <img
-              className="h-24 w-auto p-1"
-              src="/social/github.svg"
-              alt="logo"
-            /> <
+        <
         img className = "h-24 w-auto p-1"
         src = "/social/telegram.svg"
         alt = "logo" /
         >
-        <img
-              className="h-24 w-auto p-1"
-              src="/social/discord.svg"
-              alt="logo"
-            /> <
+        <
         img className = "h-24 w-auto p-1"
-        src = "/social/instagram.svg"
+        src = "/social/discord.svg"
         alt = "logo" /
         >
-        <img
-              className="h-24 w-auto p-1"
-              src="/social/youtube.svg"
-              alt="logo"
-            /> <
-        /div> <
-        /div> <
+        <img className = "h-24 w-auto p-1"
+        src = "/social/youtube.svg"
+        alt = "logo" /
+        > <
+        /div> < /
+        div > <
         div className = "w-full flex flex-col justify-center bg-footer px-4 xl:px-32 py-16 xl:py-24" >
         <div className="flex font-medium text-2xl text-secondary w-full mb-8">
             INDEX BLOCK
           </div> <
         div className = "flex justify-between" >
         <div className="text-lg xl:w-96 flex flex-col text-secondary mr-4">
-              About
+              ABOUT
               <div className="text-xs text-[#CCCDCE]">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                itaque dolore nostrum ut eius qui, nulla tenetur rerum ratione
-                maxime. Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Earum provident quia exercitationem magni, nulla quos
-                asperiores aut nam quas deserunt?
+                The larget crypto index fund in the market. Join our pre-sale by swapping tokens today. Learn more by joining our Telegram group above.
               </div>
-              <div className="text-sm mt-8">
-                +1 (345) 769-1882 George Town, Cayman Islands
+              <div className="text-sm mt-8 contact-info-to-be-added">
+                
               </div>
             </div> <
         div className = "text-lg xl:w-96 flex flex-col gap-1 items-end text-secondary" >
-        Legal <
-        div className = "text-xs text-[#CCCDCE]" > Legal < /div> <
-        div className = "text-xs text-[#CCCDCE]" > Terms < /div> <
-        div className = "text-xs text-[#CCCDCE]" > Privacy < /div> <
-        div className = "text-xs text-[#CCCDCE]" > License < /div> <
-        /div> <
-        /div> <
+        <
         div className = "text-xs text-[#CCCDCE] w-full mt-8" >
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry 's standard dummy text
-        ever since the 1500 s, when an unknown printer too Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry 's standard dummy text ever since the
-        1500 s, when an unknown printer too <
-        /div> <
-        /div> <
+        IMPORTANT LEGAL DISCLAIMER Access to products and services detailed on this website may be restricted
+        for certain persons or countries.In particular, the products and services referred to herein are not available to U.S.Persons, as defined by Regulation S of the United States Securities and Exchange Commission, as amended(“U.S.Persons”).The information contained on this website is not available to U.S.Persons.Investors who are such "U.S. Persons"
+        should not view this website.The provision of the information in this website does not constitute an offer of securities to any person in the United States or to any "U.S. Person."
+        Index Block is not registered under the U.S.Investment Company Act of 1940, as amended, nor is the sale of INDB tokens registered under the U.S.Securities Act of 1933, as amended.Consequently, it cannot be offered
+        for sale or be sold in the United States, its territories, possessions or protectorates under its jurisdiction, nor to nationals, citizens or residents in any of those areas, except pursuant to a valid exemption.More generally, the products and services presented on this website may only be purchased in jurisdictions in which their marketing and distribution are authorised.Index Block advises all interested parties to check in advance whether they are legally entitled to purchase the products and / or services presented on the website. <
+        /div> < /
+        div > <
         Referral setShowReferralModal = { setShowReferralModal } showReferralModal = { showReferralModal } referralCode = { referralCode }
         /> <
         Wallet setShowWalletModal = { setShowWalletModal } showWalletModal = { showWalletModal } walletConnected = { walletConnected } setWalletConnected = { setWalletConnected }
         /> <
         SelectWallet showSelectWallet = { showSelectWallet } setShowSelectWallet = { setShowSelectWallet } setWalletConnected = { setWalletConnected }
-        /> <
-        /Layout> <
+        /> < /
+        Layout > <
         />
     );
 }

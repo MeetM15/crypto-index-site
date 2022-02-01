@@ -4,10 +4,10 @@ import { IoIosArrowUp } from "react-icons/io";
 import { HiPlus, HiMinus } from "react-icons/hi";
 
 export default function Faq() {
-  return (
-    <div className="w-full flex flex-col items-center justify-center xl:px-40">
+    return (
+        <div className="w-full flex flex-col items-center justify-center xl:px-40">
       <div className="font-medium text-3xl md:text-4xl mb-5 leading-10 md:leading-12 text-center ">
-        Have any question ? Check FAQs
+        Frequently Asked Questions (FAQ)
       </div>
       <div className="w-full p-2 mx-auto bg-white rounded-2xl">
         <Disclosure>
@@ -17,7 +17,7 @@ export default function Faq() {
                 className={`flex justify-between w-full px-8 py-5 text-sm font-medium text-left text-black bg-secondary border border-inputbg focus:outline-none ${
                   open ? "border-b-0  rounded-t-xl" : "rounded-xl"
                 }`}>
-                <span>Is CRYPTO20 a platform?</span>
+                <span>Is Index Block a platform?</span>
                 <HiPlus
                   className={`${open ? "hidden" : "block"} w-5 h-5 text-black`}
                 />
@@ -27,107 +27,14 @@ export default function Faq() {
               </Disclosure.Button>
               <Disclosure.Panel
                 className={`px-8 pb-5 text-sm text-lgrey border border-t-0 border-inputbg rounded-b-xl`}>
-                No - CRYPTO20 is not a platform. It is an autonomous,
+                No - Index Block is not a platform. It is an autonomous,
                 high-performance, low-cost cryptocurrency index fund.
-                Development of the trading system is complete - CRYPTO20 offers
-                value now, not at some point in the future. Diversification to
-                the top 20 cryptocurrencies is now possible by holding a single
-                token.
+                Index Block offers value now with access to 50 cryptocurrencies by holding a single token.
               </Disclosure.Panel>
             </div>
           )}
         </Disclosure>
-        <Disclosure as="div" className="mt-2">
-          {({ open }) => (
-            <div className="shadow-lg rounded-xl">
-              <Disclosure.Button
-                className={`flex justify-between w-full px-8 py-5 text-sm font-medium text-left text-black bg-secondary border border-inputbg focus:outline-none ${
-                  open ? "border-b-0  rounded-t-xl" : "rounded-xl"
-                }`}>
-                <span>Where is CRYPTO20 incorporated?</span>
-                <HiPlus
-                  className={`${open ? "hidden" : "block"} w-5 h-5 text-black`}
-                />
-                <HiMinus
-                  className={`${!open ? "hidden" : "block"} w-5 h-5 text-black`}
-                />
-              </Disclosure.Button>
-              <Disclosure.Panel
-                className={`px-8 pb-5 text-sm text-lgrey border border-t-0 border-inputbg rounded-b-xl`}>
-                CRYPTO20 has been established in the Cayman Islands
-                jurisdiction. The Caymans are a popular international
-                jurisdiction for the incorporation of investment funds. The
-                Cayman jurisdiction has seen a strong increase in private equity
-                funds year on year over the past decade. The popularity of
-                Cayman private equity funds has been fuelled by the increase in
-                hedge fund managers growing into the private equity space and by
-                the increased use of private equity funds to pursue distressed
-                asset investments. The Cayman limited liability company (LLC)
-                was introduced last year as a flexible, tax-neutral low-cost
-                fund vehicle with a corporate personality. The LLC is a flexible
-                structure ideally suited for use as a closed-end investment
-                vehicle. The Cayman LLC was established under legislation that
-                was drafted with the key terms of private equity vehicles in
-                mind. The registration, due diligence and reporting requirements
-                which arise from this legislation is generally delegated to a
-                private equity fund’s administrator. The procedures are closely
-                aligned with existing anti-money laundering (AML/KYC)
-                requirements to ensure that the use of Cayman vehicles for
-                private equity structures remains a low cost option. Please see
-                this Deloitte report for more.
-              </Disclosure.Panel>
-            </div>
-          )}
-        </Disclosure>
-        <Disclosure as="div" className="mt-2">
-          {({ open }) => (
-            <div className="shadow-lg rounded-xl">
-              <Disclosure.Button
-                className={`flex justify-between w-full px-8 py-5 text-sm font-medium text-left text-black bg-secondary border border-inputbg focus:outline-none ${
-                  open ? "border-b-0  rounded-t-xl" : "rounded-xl"
-                }`}>
-                <span>What are CRYPTO20's public reporting requirements?</span>
-                <HiPlus
-                  className={`${open ? "hidden" : "block"} w-5 h-5 text-black`}
-                />
-                <HiMinus
-                  className={`${!open ? "hidden" : "block"} w-5 h-5 text-black`}
-                />
-              </Disclosure.Button>
-              <Disclosure.Panel
-                className={`px-8 pb-5 text-sm text-lgrey border border-t-0 border-inputbg rounded-b-xl`}>
-                Please see our public reporting requirements document.
-              </Disclosure.Panel>
-            </div>
-          )}
-        </Disclosure>
-        <Disclosure as="div" className="mt-2">
-          {({ open }) => (
-            <div className="shadow-lg rounded-xl">
-              <Disclosure.Button
-                className={`flex justify-between w-full px-8 py-5 text-sm font-medium text-left text-black bg-secondary border border-inputbg focus:outline-none ${
-                  open ? "border-b-0  rounded-t-xl" : "rounded-xl"
-                }`}>
-                <span>
-                  Have the CRYPTO20 Fund's asset holdings been verified by a
-                  third party?
-                </span>
-                <HiPlus
-                  className={`${open ? "hidden" : "block"} w-5 h-5 text-black`}
-                />
-                <HiMinus
-                  className={`${!open ? "hidden" : "block"} w-5 h-5 text-black`}
-                />
-              </Disclosure.Button>
-              <Disclosure.Panel
-                className={`px-8 pb-5 text-sm text-lgrey border border-t-0 border-inputbg rounded-b-xl`}>
-                An Agreed Upon Procedures engagement has been completed by KPMG;
-                you may see the procedures Crypto20 requested to be performed in
-                the report here.
-              </Disclosure.Panel>
-            </div>
-          )}
-        </Disclosure>
+       
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <div className="shadow-lg rounded-xl">
@@ -145,8 +52,7 @@ export default function Faq() {
               </Disclosure.Button>
               <Disclosure.Panel
                 className={`px-8 pb-5 text-sm text-lgrey border border-t-0 border-inputbg rounded-b-xl`}>
-                Please see our learn page to discover more about index funds and
-                crypto investment.
+                An index fund is a type of mutual fund or exchange-traded fund (ETF) with a portfolio constructed to match or track the components of a financial market index, such as the Standard & Poor's 500 Index (S&P 500). An index mutual fund is said to provide broad market exposure, low operating expenses, and low portfolio turnover. These funds follow their benchmark index regardless of the state of the markets. 
               </Disclosure.Panel>
             </div>
           )}
@@ -170,7 +76,7 @@ export default function Faq() {
                 className={`px-8 pb-5 text-sm text-lgrey border border-t-0 border-inputbg rounded-b-xl`}>
                 Fund automation will allow us to operate in a sustainable
                 low-cost skeleton fund capacity and offer management fees of
-                only 0.5% p/a as opposed to the 3% p/a plus 0.5% exit fees
+                only 1% as opposed to the 3% plus 0.5% exit fees
                 offered in the crypto market at the moment.
               </Disclosure.Panel>
             </div>
@@ -183,7 +89,7 @@ export default function Faq() {
                 className={`flex justify-between w-full px-8 py-5 text-sm font-medium text-left text-black bg-secondary border border-inputbg focus:outline-none ${
                   open ? "border-b-0  rounded-t-xl" : "rounded-xl"
                 }`}>
-                <span>Why is CRYPTO20 on the blockchain?</span>
+                <span>Why is Index Block on the blockchain?</span>
                 <HiPlus
                   className={`${open ? "hidden" : "block"} w-5 h-5 text-black`}
                 />
@@ -194,7 +100,7 @@ export default function Faq() {
               <Disclosure.Panel
                 className={`px-8 pb-5 text-sm text-lgrey border border-t-0 border-inputbg rounded-b-xl`}>
                 There are many reasons to utilize blockchain technology for
-                CRYPTO20:
+                Index Block:
                 <br />
                 <br />
                 <ul>
@@ -207,7 +113,7 @@ export default function Faq() {
                   <li>
                     Easy listing for sale and trading peer-to-peer on exchange
                   </li>
-                  <li>CRYPTO20 only holds cryptocurrency assets</li>
+                  <li>Index Block only holds cryptocurrency assets</li>
                 </ul>
               </Disclosure.Panel>
             </div>
@@ -245,12 +151,12 @@ export default function Faq() {
                     process
                   </li>
                   <li>
-                    C20 token value can exceed value of underlying assets but
+                    INDB token value can exceed value of underlying assets but
                     can not fall below due to the liquidation option in the
                     smart contract
                   </li>
                   <li>
-                    C20 tokens are designed to be attractive to fiat investors
+                    INDB tokens are designed to be attractive to fiat investors
                     seeking a straightforward way to gain exposure to
                     cryptocurrencies
                   </li>
@@ -267,8 +173,8 @@ export default function Faq() {
                   open ? "border-b-0  rounded-t-xl" : "rounded-xl"
                 }`}>
                 <span>
-                  What will happen if one of the tokens that CRYPTO20 holds
-                  undergoes a fork - such as Ethereum or Bitcoin has?
+                  What will happen if one of the tokens that Index Block holds
+                  undergoes a fork?
                 </span>
                 <HiPlus
                   className={`${open ? "hidden" : "block"} w-5 h-5 text-black`}
@@ -279,11 +185,10 @@ export default function Faq() {
               </Disclosure.Button>
               <Disclosure.Panel
                 className={`px-8 pb-5 text-sm text-lgrey border border-t-0 border-inputbg rounded-b-xl`}>
-                We will integrate the additional tokens into the CRYPTO20 fund
+                We will integrate the additional tokens into the Index Block fund
                 as soon as we are able and then follow normal rebalancing
-                procedure (and as such this token may or may not then form part
-                of our fund composition). It is likely that the value of the
-                fund will increase and this will be passed on to C20
+                procedures. It is likely that the value of the
+                fund will increase and will be passed onto INDB
                 token-holders.
               </Disclosure.Panel>
             </div>
@@ -291,5 +196,5 @@ export default function Faq() {
         </Disclosure>
       </div>
     </div>
-  );
+    );
 }

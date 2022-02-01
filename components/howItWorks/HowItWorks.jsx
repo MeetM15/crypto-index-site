@@ -60,10 +60,10 @@ const HowItWorks = () => {
           <div className="flex flex-col items-center justify-evenly w-80 h-80 rounded-2xl bg-secondary p-5 shadow-lg">
             <img className="h-24 w-auto p-1" src="/how/track.svg" alt="logo" />
             <div className="w-full font-bold text-xl mt-4 text-center">
-              Follow the index
+              Track the Index
             </div>
             <div className="w-full flex items-center justify-center text-sm font-medium text-inputText text-center">
-              Index funds consistently beat actively managed funds over
+              Index funds consistently beat actively managed funds for over
               the last 30 years.
             </div>
           </div>
