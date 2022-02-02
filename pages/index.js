@@ -518,9 +518,8 @@ export default function Home() {
         /a> <
         a id = "invest" >
         <div className=" w-full flex flex-col items-center justify-center bg-bggray">
-            <div className="w-full 2xl:w-194 flex flex-col items-center justify-center px-4 xl:px-24 py-16 xl:py-24 gap-8 sm:gap-16">
-              <div className="text-black w-full text-center text-4xl font-bold">
-                Invest
+           <div className="w-full 2xl:w-194 flex flex-col items-center justify-center px-4 xl:px-24 py-16 xl:py-24">
+              <div className="text-black w-full text-center text-4xl font-bold mb-8">     Invest
               </div>
               <SwapForm
                 selectedCurrency={selectedCurrency}
@@ -550,7 +549,9 @@ export default function Home() {
                 referCodeField={referCodeField}
                 setReferCodeField={setReferCodeField}
               />
-              <div className="w-full sm:w-112 p-12 bg-secondary rounded-2xl text-black text-xl font-medium flex flex-col">
+              <div className="w-full text-inputText text-center text-xl font-medium p-4"> OR
+               </div>
+              <div className="w-full sm:w-112 p-12 bg-secondary rounded-2xl text-black text-xl font-medium flex flex-col mb-8">
                 Send ETH, BNB (BSC), or USDT to this address
                 <div className="flex flex-col xl:flex-row gap-4 w-full mt-2">
                   <div className="w-full xl:w-9/12 p-3 text-textBlue font-medium text-sm bg-secondary rounded-lg border">
@@ -840,8 +841,8 @@ export default function Home() {
         Wallet setShowWalletModal = { setShowWalletModal } showWalletModal = { showWalletModal } walletConnected = { walletConnected } setWalletConnected = { setWalletConnected }
         /> <
         SelectWallet showSelectWallet = { showSelectWallet } setShowSelectWallet = { setShowSelectWallet } setWalletConnected = { setWalletConnected }
-        /> < /
-        Layout > <
-        />
+        /> 
+         </Layout>
+    </>
     );
 }
