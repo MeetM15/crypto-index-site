@@ -15,7 +15,7 @@ import SelectWallet from "../components/modals/SelectWallet";
 import { useRouter } from "next/router";
 import { TailSpin } from "react-loader-spinner";
 //icons
-import { MdAccountBalanceWallet } from "react-icons/md";
+import { MdAccountBalanceWallet, MdUpcoming } from "react-icons/md";
 import { IoLogoGithub } from "react-icons/io";
 import { IoNewspaperOutline } from "react-icons/io5";
 import { HiOutlineDocumentReport } from "react-icons/hi";
@@ -454,14 +454,13 @@ export default function Home() {
                     />
                     Connect Wallet
                   </button>
-                  <button
-                    onClick={() => {
-                      console.log("Learn more!");
-                    }}
-                    className="bg-white text-textBlue text-xs font-bold px-4 py-2 w-36 lg:w-42 flex rounded-lg items-center justify-center border border-textBlue h-10"
-                    type="button">
-                    Learn more
-                  </button>
+                  <a href="#how">
+                    <button
+                      className="bg-white text-textBlue text-xs font-bold px-4 py-2 w-36 lg:w-42 flex rounded-lg items-center justify-center border border-textBlue h-10"
+                      type="button">
+                      Learn more
+                    </button>
+                  </a>
                 </div>
                 <div className="w-full font-medium text-xl italic text-black mb-2">
                   “Don't look for the needle in the haystack.
@@ -596,10 +595,7 @@ export default function Home() {
                 returns with broad, diversified risk.
               </div>
               <div className="flex w-full items-start justify-center xl:justify-start mb-4 lg:mb-12">
-                <a
-                  href="https://cdn.indexblock.com/pdf/indb-whitepaper.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer">
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   <button
                     className="bg-btnBlue text-white text-xs font-medium px-4 py-2 w-36 lg:w-46 flex rounded-lg items-center justify-center mb-4 sm:mb-0 mr-4 h-12"
                     type="button">
@@ -614,7 +610,7 @@ export default function Home() {
                   <button
                     className="bg-btnBlue text-white text-xs font-medium px-4 py-2 w-36 lg:w-46 flex rounded-lg items-center justify-center mb-4 sm:mb-0 sm:mr-4 h-12"
                     type="button">
-                    <IoLogoGithub className="text-white mr-1" size="24px" />
+                    <MdUpcoming className="text-white mr-1" size="24px" />
                     Coming Soon
                   </button>
                 </a>
@@ -823,12 +819,12 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="w-full flex flex-col justify-center bg-footer px-4 xl:px-32 py-16 xl:py-24">
+        <div className="w-full flex flex-col justify-center bg-footer px-4 sm:px-12 xl:px-32 py-16 xl:py-24">
           <div className="flex font-medium text-2xl text-secondary w-full mb-8">
             INDEX BLOCK
           </div>
-          <div className="flex justify-between">
-            <div className="text-lg xl:w-96 flex flex-col text-secondary mr-4">
+          <div className="flex flex-col justify-between">
+            <div className="text-lg md:w-96 flex flex-col text-secondary mr-4">
               ABOUT
               <div className="text-xs text-[#CCCDCE]">
                 The larget crypto index fund in the market. Join our pre-sale by
@@ -837,34 +833,7 @@ export default function Home() {
               </div>
               <div className="text-sm mt-8 contact-info-to-be-added"></div>
             </div>
-            <div className="text-lg xl:w-96 flex flex-col gap-1 items-end text-secondary">
-              <div className="text-xs text-[#CCCDCE] w-full mt-8">
-                IMPORTANT LEGAL DISCLAIMER Access to products and services
-                detailed on this website may be restricted for certain persons
-                or countries.In particular, the products and services referred
-                to herein are not available to U.S.Persons, as defined by
-                Regulation S of the United States Securities and Exchange
-                Commission, as amended(“U.S.Persons”).The information contained
-                on this website is not available to U.S.Persons.Investors who
-                are such "U.S. Persons" should not view this website.The
-                provision of the information in this website does not constitute
-                an offer of securities to any person in the United States or to
-                any "U.S. Person." Index Block is not registered under the
-                U.S.Investment Company Act of 1940, as amended, nor is the sale
-                of INDB tokens registered under the U.S.Securities Act of 1933,
-                as amended.Consequently, it cannot be offered for sale or be
-                sold in the United States, its territories, possessions or
-                protectorates under its jurisdiction, nor to nationals, citizens
-                or residents in any of those areas, except pursuant to a valid
-                exemption.More generally, the products and services presented on
-                this website may only be purchased in jurisdictions in which
-                their marketing and distribution are authorised.Index Block
-                advises all interested parties to check in advance whether they
-                are legally entitled to purchase the products and / or services
-                presented on the website.
-              </div>
-            </div>
-            <div className="text-lg xl:w-96 flex flex-col gap-1 items-end text-secondary">
+            <div className="text-lg w-full flex flex-col gap-1 items-end text-secondary">
               <div className="text-xs text-[#CCCDCE] w-full mt-8">
                 IMPORTANT LEGAL DISCLAIMER Access to products and services
                 detailed on this website may be restricted for certain persons
