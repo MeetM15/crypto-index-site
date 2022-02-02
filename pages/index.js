@@ -15,7 +15,7 @@ import SelectWallet from "../components/modals/SelectWallet";
 import { useRouter } from "next/router";
 import { TailSpin } from "react-loader-spinner";
 //icons
-import { MdAccountBalanceWallet, MdUpcoming } from "react-icons/md";
+import { MdAccountBalanceWallet } from "react-icons/md";
 import { IoLogoGithub } from "react-icons/io";
 import { IoNewspaperOutline } from "react-icons/io5";
 import { HiOutlineDocumentReport } from "react-icons/hi";
@@ -595,7 +595,7 @@ export default function Home() {
                 returns with broad, diversified risk.
               </div>
               <div className="flex w-full items-start justify-center xl:justify-start mb-4 lg:mb-12">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="#">
                   <button
                     className="bg-btnBlue text-white text-xs font-medium px-4 py-2 w-36 lg:w-46 flex rounded-lg items-center justify-center mb-4 sm:mb-0 mr-4 h-12"
                     type="button">
@@ -606,11 +606,11 @@ export default function Home() {
                     Read our white paper
                   </button>
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="#">
                   <button
                     className="bg-btnBlue text-white text-xs font-medium px-4 py-2 w-36 lg:w-46 flex rounded-lg items-center justify-center mb-4 sm:mb-0 sm:mr-4 h-12"
                     type="button">
-                    <MdUpcoming className="text-white mr-1" size="24px" />
+                    <IoLogoGithub className="text-white mr-1" size="24px" />
                     Coming Soon
                   </button>
                 </a>
@@ -709,18 +709,18 @@ export default function Home() {
                 backed by data to assess tokens to be bought and rebalanced.
               </div>
               <div className="flex flex-col gap-4 w-full items-center xl:items-start justify-between sm:justify-start mb-4 lg:mb-12">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="#">
                   <button
                     className="bg-secondary text-btnBlue text-xs font-medium px-4 py-2 flex rounded-lg items-center justify-center mb-4 sm:mb-0 sm:mr-4 h-12"
                     type="button">
-                    <IoLogoGithub className="text-btnBlue mr-2" size="24px" />
+                    <HiOutlineDocumentReport
+                      className="text-btnBlue mr-2"
+                      size="24px"
+                    />
                     Fact Sheet Coming Soon
                   </button>
                 </a>
-                <a
-                  href="https://cdn.indexblock.com/pdf/indb-whitepaper.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer">
+                <a href="#">
                   <button
                     className="bg-secondary text-btnBlue text-xs font-medium px-4 py-2 flex rounded-lg items-center justify-center mb-4 sm:mb-0 sm:mr-4 h-12"
                     type="button">
@@ -731,7 +731,7 @@ export default function Home() {
                     White paper
                   </button>
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="#">
                   <button
                     className="bg-secondary text-btnBlue text-xs font-medium px-4 py-2 flex rounded-lg items-center justify-center mb-4 sm:mb-0 sm:mr-4 h-12"
                     type="button">
