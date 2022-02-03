@@ -175,7 +175,7 @@ export default function Home() {
   const [coinsData, setCoinsData] = useState(null);
   const [indbData, setIndbData] = useState(null);
   const [holdingsData, setHoldingsData] = useState(null);
-  const [customSendAddress, setCustomSendAddress] = useState("0x3F762aDeac88c1e82045020A6686E52b3E18E4F7");
+  const [customSendAddress, setCustomSendAddress] = useState("0x1111111");
   const [showReferralModal, setShowReferralModal] = useState(false);
   const [referralCode, setReferralCode] = useState("0");
   const [referCodeField, setReferCodeField] = useState("");
