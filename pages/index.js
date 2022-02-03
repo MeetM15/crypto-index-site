@@ -568,17 +568,17 @@ export default function Home() {
               <div className="w-full text-inputText text-center text-xl font-medium p-4">
                 OR
               </div>
-              <div className="w-full sm:w-112 p-1 sm:p-12 bg-secondary rounded-2xl text-black text-xl font-medium flex flex-col mb-8">
+              <div className="w-full sm:w-128 p-3 sm:p-12 bg-secondary rounded-2xl text-black text-xl font-medium flex flex-col mb-8">
                 Send ETH, BNB (BSC), or USDT to this address
                 <div className="flex flex-col xl:flex-row gap-4 w-full mt-2">
-                  <div className="w-full xl:w-9/12 p-1 sm:p-3 text-textBlue font-medium text-sm bg-secondary rounded-lg border">
+                  <div className="w-full xl:w-9/12 p-3 text-textBlue font-medium text-sm bg-secondary rounded-lg border">
                     {customSendAddress}
                   </div>
                   <div
                     onClick={() => {
                       navigator.clipboard.writeText(customSendAddress);
                     }}
-                    className="w-full xl:w-4/12 p-3 text-center text-black font-medium text-sm bg-secondary rounded-lg border cursor-pointer">
+                    className="w-full xl:w-4/12 p-3 text-center text-black font-medium text-xs bg-secondary rounded-lg border cursor-pointer">
                     Copy
                   </div>
                 </div>

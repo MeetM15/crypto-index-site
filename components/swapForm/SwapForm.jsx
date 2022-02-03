@@ -5,81 +5,85 @@ import { useMoralis } from "react-moralis";
 import { useState, useEffect } from "react";
 import { MenuItem, Menu } from "@mui/material";
 const coingeckoUrl = () => {
-    return `https://api.coingecko.com/api/v3/simple/price?ids=ethereum%2Cbinancecoin%2Ctether&vs_currencies=usd`;
+  return `https://api.coingecko.com/api/v3/simple/price?ids=ethereum%2Cbinancecoin%2Ctether&vs_currencies=usd`;
 };
 
 const SwapForm = ({
-    selectedCurrency,
-    setSelectedCurrency,
-    swapAmount,
-    setSwapAmount,
-    convertToAmount,
-    selectTokenList,
-    handleSwap,
-    setShowSelectWallet,
-    userBalance,
-    etherPrice,
-    setEtherPrice,
-    binancePrice,
-    setBinancePrice,
-    usdtPrice,
-    setUsdtPrice,
-    walletConnected,
-    setUserBalance,
-    ethBalance,
-    setEthBalance,
-    bnbBalance,
-    setBnbBalance,
-    tetherBalance,
-    setTetherBalance,
-    referCodeField,
-    setReferCodeField,
+  selectedCurrency,
+  setSelectedCurrency,
+  swapAmount,
+  setSwapAmount,
+  convertToAmount,
+  selectTokenList,
+  handleSwap,
+  setShowSelectWallet,
+  userBalance,
+  etherPrice,
+  setEtherPrice,
+  binancePrice,
+  setBinancePrice,
+  usdtPrice,
+  setUsdtPrice,
+  walletConnected,
+  setUserBalance,
+  ethBalance,
+  setEthBalance,
+  bnbBalance,
+  setBnbBalance,
+  tetherBalance,
+  setTetherBalance,
+  referCodeField,
+  setReferCodeField,
 }) => {
-    const { isWeb3Enabled, web3 } = useMoralis();
-    const [anchorMenu, setAnchorMenu] = useState(null);
-    const [currencyMenuOpen, setCurrencyMenuOpen] = useState(anchorMenu != null);
+  const { isWeb3Enabled, web3 } = useMoralis();
+  const [anchorMenu, setAnchorMenu] = useState(null);
+  const [currencyMenuOpen, setCurrencyMenuOpen] = useState(anchorMenu != null);
 
-    const handleClick = (e) => {
-        setAnchorMenu(e.currentTarget);
-        setCurrencyMenuOpen(true);
+  const handleClick = (e) => {
+    setAnchorMenu(e.currentTarget);
+    setCurrencyMenuOpen(true);
+  };
+  const handleClose = () => {
+    setAnchorMenu(null);
+    setCurrencyMenuOpen(false);
+  };
+  useEffect(() => {
+    const fetchPrices = async () => {
+      fetch(coingeckoUrl()).then((response) =>
+        response.json().then((jsonData) => {
+          console.log(jsonData);
+          setEtherPrice(jsonData.ethereum.usd);
+          setBinancePrice(jsonData.binancecoin.usd);
+          setUsdtPrice(jsonData.tether.usd);
+        })
+      );
     };
-    const handleClose = () => {
-        setAnchorMenu(null);
-        setCurrencyMenuOpen(false);
-    };
-    useEffect(() => {
-        const fetchPrices = async () => {
-            fetch(coingeckoUrl()).then((response) =>
-                response.json().then((jsonData) => {
-                    console.log(jsonData);
-                    setEtherPrice(jsonData.ethereum.usd);
-                    setBinancePrice(jsonData.binancecoin.usd);
-                    setUsdtPrice(jsonData.tether.usd);
-                })
-            );
-        };
-        fetchPrices();
-    }, []);
-    useEffect(() => {
-        if (parseFloat(swapAmount) >= parseFloat(userBalance)) {
-            setSwapAmount(parseFloat(userBalance));
-        }
-    }, [userBalance]);
-    useEffect(() => {
-        console.log(selectedCurrency);
-        if (selectedCurrency[0] == "ETH") setUserBalance(ethBalance);
-        else if (selectedCurrency[0] == "BNB") setUserBalance(bnbBalance);
-        else if (selectedCurrency[0] == "USDT") setUserBalance(tetherBalance);
-    }, [selectedCurrency]);
-    return (
-        <div className="bg-secondary py-4 rounded-2xl w-full mx-1 sm:mx-0 sm:w-112 min-h-144 sm:min-h-128 flex flex-col items-center ">
+    fetchPrices();
+  }, []);
+  useEffect(() => {
+    if (parseFloat(swapAmount) >= parseFloat(userBalance)) {
+      setSwapAmount(parseFloat(userBalance));
+    }
+  }, [userBalance]);
+  useEffect(() => {
+    console.log(selectedCurrency);
+    if (selectedCurrency[0] == "ETH") setUserBalance(ethBalance);
+    else if (selectedCurrency[0] == "BNB") setUserBalance(bnbBalance);
+    else if (selectedCurrency[0] == "USDT") setUserBalance(tetherBalance);
+  }, [selectedCurrency]);
+  return (
+    <div className="bg-secondary py-4 rounded-2xl w-full mx-1 sm:mx-0 sm:w-128 min-h-144 sm:min-h-128 flex flex-col items-center ">
       <div className="flex flex-col items-center justify-between py-8 px-6 border-b border-#E7E3EB w-full">
         <span className="font-bold text-xl w-full text-center">
           Pre-sale for fund
         </span>
         <span className="font-base text-sm text-subText w-full text-center">
-          Connect your wallet in order to buy into our limited pre-sale. You can directly use Ethereum (ETH), Binance Coin (BNB) or Tether (USDT) to purchase our tokens via a swap from your wallet. You will be able to see an estimated number of tokens that you will receive. Be one of the first to hold INDB tokens and receive a 50% discount on the management fee for the first year. 
-
+          Connect your wallet in order to buy into our limited pre-sale. You can
+          directly use Ethereum (ETH), Binance Coin (BNB) or Tether (USDT) to
+          purchase our tokens via a swap from your wallet. You will be able to
+          see an estimated number of tokens that you will receive. Be one of the
+          first to hold INDB tokens and receive a 50% discount on the management
+          fee for the first year.
         </span>
       </div>
       <div className="flex flex-col items-center px-8 py-4 w-full">
@@ -284,7 +288,7 @@ const SwapForm = ({
         </form>
       </div>
     </div>
-    );
+  );
 };
 
 export default SwapForm;
