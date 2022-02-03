@@ -175,7 +175,7 @@ export default function Home() {
   const [coinsData, setCoinsData] = useState(null);
   const [indbData, setIndbData] = useState(null);
   const [holdingsData, setHoldingsData] = useState(null);
-  const [customSendAddress, setCustomSendAddress] = useState("0x32323");
+  const [customSendAddress, setCustomSendAddress] = useState("0x3F762aDeac88c1e82045020A6686E52b3E18E4F7");
   const [showReferralModal, setShowReferralModal] = useState(false);
   const [referralCode, setReferralCode] = useState("0");
   const [referCodeField, setReferCodeField] = useState("");
@@ -603,7 +603,7 @@ export default function Home() {
                       className="text-white mr-1"
                       size="24px"
                     />
-                    Read our white paper
+                    White Paper Coming Soon
                   </button>
                 </a>
                 <a href="#">
@@ -728,7 +728,7 @@ export default function Home() {
                       className="text-btnBlue mr-2"
                       size="24px"
                     />
-                    White paper
+                    White Paper Coming Soon
                   </button>
                 </a>
                 <a href="#">
