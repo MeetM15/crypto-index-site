@@ -1,10 +1,10 @@
 import "../styles/globals.css";
 import { MoralisProvider } from "react-moralis";
 import axios from "axios";
-axios.defaults.baseURL = "https://indexblock.herokuapp.com/";
+axios.defaults.baseURL = "https://api.indexblock.fund/";
 
-const appId = "5SXhZyK2CMouks2ACdoDGV0Nr6UqJteFOWJ4pr8y";
-const serverUrl = "https://oijvmq4z5imv.usemoralis.com:2053/server";
+const appId = "fk8hHX5ftWfk1s24SGiQ89dK2FKRrd7tgWJQPLzB";
+const serverUrl = "https://ogobtdmrqv5p.usemoralis.com:2053/server";
 function MyApp({ Component, pageProps }) {
   return (
     <MoralisProvider appId={appId} serverUrl={serverUrl}>
