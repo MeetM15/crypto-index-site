@@ -175,7 +175,9 @@ export default function Home() {
   const [coinsData, setCoinsData] = useState(null);
   const [indbData, setIndbData] = useState(null);
   const [holdingsData, setHoldingsData] = useState(null);
-  const [customSendAddress, setCustomSendAddress] = useState("0x351477596502aAF31de5f89773a36635824e849a");
+  const [customSendAddress, setCustomSendAddress] = useState(
+    "0x351477596502aAF31de5f89773a36635824e849a"
+  );
   const [showReferralModal, setShowReferralModal] = useState(false);
   const [referralCode, setReferralCode] = useState("0");
   const [referCodeField, setReferCodeField] = useState("");
@@ -432,6 +434,7 @@ export default function Home() {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
+        <meta name="description" content="The Largest Crypto Index Fund" />
       </Head>
       <Layout
         setShowWalletModal={setShowWalletModal}
@@ -482,7 +485,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-full lg:w-7/12 mt-4 xl:mt-0 flex items-center justify-center">
-                <img src="/home_ele.svg" alt="xxx" className="w-full" />
+                <img src="/coinstack.png" alt="xxx" className="w-full" />
               </div>
             </div>
             <div className="font-medium text-xs text-lgrey w-full flex flex-wrap sm:flex-nowrap items-center justify-center xl:justify-start mt-4 gap-2">
@@ -565,10 +568,10 @@ export default function Home() {
               <div className="w-full text-inputText text-center text-xl font-medium p-4">
                 OR
               </div>
-              <div className="w-full sm:w-112 p-12 bg-secondary rounded-2xl text-black text-xl font-medium flex flex-col mb-8">
+              <div className="w-full sm:w-112 p-1 sm:p-12 bg-secondary rounded-2xl text-black text-xl font-medium flex flex-col mb-8">
                 Send ETH, BNB (BSC), or USDT to this address
                 <div className="flex flex-col xl:flex-row gap-4 w-full mt-2">
-                  <div className="w-full xl:w-9/12 p-3 text-textBlue font-medium text-sm bg-secondary rounded-lg border">
+                  <div className="w-full xl:w-9/12 p-1 sm:p-3 text-textBlue font-medium text-sm bg-secondary rounded-lg border">
                     {customSendAddress}
                   </div>
                   <div
@@ -845,12 +848,12 @@ export default function Home() {
               <div className="text-xs text-[#CCCDCE] w-full mt-8">
                 IMPORTANT LEGAL DISCLAIMER Access to products and services
                 detailed on this website may be restricted for certain persons
-                or countries. More generally, the products and services presented on
-                this website may only be purchased in jurisdictions in which
-                their marketing and distribution are authorised. Index Block
-                advises all interested parties to check in advance whether they
-                are legally entitled to purchase the products and / or services
-                presented on the website.
+                or countries. More generally, the products and services
+                presented on this website may only be purchased in jurisdictions
+                in which their marketing and distribution are authorised. Index
+                Block advises all interested parties to check in advance whether
+                they are legally entitled to purchase the products and / or
+                services presented on the website.
               </div>
             </div>
           </div>
