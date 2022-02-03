@@ -191,8 +191,16 @@ export default function Home() {
     amount: Moralis.Units.ETH(
       parseFloat(swapAmount) ? parseFloat(swapAmount) : 0.0
     ),
-    receiver: "0x3F762aDeac88c1e82045020A6686E52b3E18E4F7",
+    receiver: "0x1111111",
     type: "native",
+  });
+  const { fetch: fetchTether } = useWeb3Transfer({
+    amount: Moralis.Units.ETH(
+      parseFloat(swapAmount) ? parseFloat(swapAmount) : 0.0
+    ),
+    receiver: "0x1111111",
+    type: "erc20",
+    contractAddress: "0xdac17f958d2ee523a2206206994597c13d831ec7",
   });
 
   const handleSwap = (
@@ -202,11 +210,6 @@ export default function Home() {
     payment_total,
     payment_method
   ) => {
-    console.log({
-      amount: Moralis.Units.ETH(parseFloat(swapAmount)),
-      receiver: "0x3F762aDeac88c1e82045020A6686E52b3E18E4F7",
-      type: "native",
-    });
     const data = {
       wallet_address: walletAddress,
       refer_code: referCode,
@@ -224,8 +227,13 @@ export default function Home() {
         console.log(err);
       });
     try {
-      const transferRes = fetch();
-      console.log(transferRes);
+      if (payment_method == "USDT") {
+        const transferRes = fetchTether();
+        console.log(transferRes);
+      } else {
+        const transferRes = fetch();
+        console.log(transferRes);
+      }
     } catch (error) {
       console.log(error);
     }
@@ -237,7 +245,7 @@ export default function Home() {
       //fetch eth balance
       web3Api.account
         .getNativeBalance({
-          chain: "rinkeby",
+          chain: "eth",
         })
         .then((res) => {
           const bal = parseFloat(Moralis.Units.FromWei(res.balance))
@@ -261,7 +269,7 @@ export default function Home() {
       //fetch tether balance
       web3Api.account
         .getTokenBalances({
-          chain: "rinkeby",
+          chain: "eth",
         })
         .then((res) => {
           console.log(res);
@@ -275,8 +283,8 @@ export default function Home() {
     if (eRC20Balances && eRC20Balances.length != 0) {
       console.log("erc : ", eRC20Balances);
       eRC20Balances.map((coin) => {
-        //0xdac17f958d2ee523a2206206994597c13d831ec7
-        if (coin.token_address == "0xd92e713d051c37ebb2561803a3b5fbabc4962431")
+        //0xdac17f958d2ee523a2206206994597c13d831ec7 = tether address
+        if (coin.token_address == "0xdac17f958d2ee523a2206206994597c13d831ec7")
           setTetherBalance(
             parseFloat(coin.balance) / Math.pow(10, parseInt(coin.decimals))
           );
